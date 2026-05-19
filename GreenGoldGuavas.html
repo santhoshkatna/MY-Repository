@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Gold Guavas — Premium Allahabad Safeda | B2B Wholesale</title>
+  <meta name="description" content="Hyderabad's premier boutique Allahabad Safeda guava orchard. 100% organic, domestic supply only. Serving wholesale distributors, supermarkets & quick-commerce platforms." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ═══════════════════════════════════════════
+       CSS CUSTOM PROPERTIES (Design Tokens)
+    ═══════════════════════════════════════════ */
+    :root {
+      /* Green palette */
+      --g-950: #011a15;
+      --g-900: #022c22;
+      --g-800: #064e3b;
+      --g-700: #065f46;
+      --g-600: #047857;
+      --g-500: #059669;
+      --g-400: #34d399;
+      --g-300: #6ee7b7;
+      --g-200: #a7f3d0;
+      --g-100: #d1fae5;
+      --g-50:  #ecfdf5;
+
+      /* Amber/gold */
+      --amber-500: #f59e0b;
+      --amber-400: #fbbf24;
+      --amber-300: #fcd34d;
+      --amber-100: #fef3c7;
+
+      /* Slate/neutral */
+      --s-900: #0f172a;
+      --s-800: #1e293b;
+      --s-700: #334155;
+      --s-600: #475569;
+      --s-500: #64748b;
+      --s-400: #94a3b8;
+      --s-300: #cbd5e1;
+      --s-200: #e2e8f0;
+      --s-100: #f1f5f9;
+      --s-50:  #f8fafc;
+      --white: #ffffff;
+
+      /* Sky */
+      --sky-700: #0369a1;
+      --sky-200: #bae6fd;
+      --sky-50:  #f0f9ff;
+
+      /* Typography */
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'DM Sans', system-ui, sans-serif;
+
+      /* Spacing */
+      --section-py: 6rem;
+
+      /* Shadows */
+      --shadow-sm: 0 1px 4px rgba(0,0,0,0.07);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.10);
+      --shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
+      --shadow-xl: 0 16px 56px rgba(0,0,0,0.16);
+      --shadow-green: 0 8px 32px rgba(6,95,70,0.25);
+
+      /* Border-radius */
+      --r-lg:  0.625rem;
+      --r-xl:  0.75rem;
+      --r-2xl: 1rem;
+      --r-3xl: 1.5rem;
+      --r-full: 9999px;
+    }
+
+    /* ═══════════════════════════════════════════
+       RESET & BASE
+    ═══════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--s-800);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin-inline: auto;
+      padding-inline: 1.5rem;
+    }
+
+    /* Section padding */
+    .section { padding-block: var(--section-py); }
+
+    /* Section label pill */
+    .section-label {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--r-full);
+      margin-bottom: 1.25rem;
+    }
+    .section-label--green {
+      background: var(--g-50);
+      border: 1px solid var(--g-200);
+      color: var(--g-700);
+    }
+    .section-label--slate {
+      background: var(--white);
+      border: 1px solid var(--s-200);
+      color: var(--s-500);
+    }
+
+    /* Display heading */
+    .display-heading {
+      font-family: var(--font-display);
+      font-weight: 700;
+      line-height: 1.1;
+      color: var(--s-900);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-body);
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      border-radius: var(--r-xl);
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+      text-decoration: none;
+    }
+    .btn:hover { transform: scale(1.035); }
+    .btn:active { transform: scale(0.98); }
+
+    .btn--primary {
+      background: var(--amber-500);
+      color: var(--s-900);
+      padding: 1rem 2rem;
+      font-size: 0.95rem;
+      box-shadow: 0 4px 20px rgba(245,158,11,0.25);
+    }
+    .btn--primary:hover {
+      background: var(--amber-400);
+      box-shadow: 0 8px 28px rgba(245,158,11,0.35);
+    }
+
+    .btn--outline {
+      background: transparent;
+      color: var(--white);
+      border: 1.5px solid rgba(255,255,255,0.25);
+      padding: 1rem 2rem;
+      font-size: 0.95rem;
+    }
+    .btn--outline:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.45);
+    }
+
+    .btn--green {
+      background: var(--g-700);
+      color: var(--white);
+      padding: 0.7rem 1.35rem;
+      font-size: 0.85rem;
+    }
+    .btn--green:hover {
+      background: var(--g-800);
+      box-shadow: var(--shadow-green);
+    }
+
+    .btn--whatsapp {
+      background: var(--g-700);
+      color: var(--white);
+      padding: 0.9rem 1.5rem;
+      font-size: 0.875rem;
+      font-weight: 700;
+      border-radius: var(--r-xl);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .btn--whatsapp:hover {
+      background: var(--g-800);
+      box-shadow: var(--shadow-green);
+      transform: scale(1.03);
+    }
+
+    /* ── Hero CTA Icon Animations ─────────────────
+       Arrow-right slides right on hover.
+       Chevron-down bounces down on hover.
+       Both use CSS transitions only — no JS.
+    ──────────────────────────────────────────── */
+
+    /* Base state: icons transition smoothly */
+    .btn-icon {
+      flex-shrink: 0;
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  opacity 0.2s ease;
+    }
+
+    /* Arrow → slides right + slight grow on hover */
+    .btn--primary:hover .btn-icon--arrow {
+      transform: translateX(5px) scale(1.1);
+    }
+    /* Arrow pops back on click */
+    .btn--primary:active .btn-icon--arrow {
+      transform: translateX(2px) scale(0.95);
+    }
+
+    /* Chevron ↓ bounces downward on hover */
+    .btn--outline:hover .btn-icon--chevron {
+      transform: translateY(4px);
+    }
+    /* Chevron springs back on click */
+    .btn--outline:active .btn-icon--chevron {
+      transform: translateY(2px) scale(0.9);
+    }
+
+    /* Pulsing glow ring behind primary CTA — pure CSS attention signal */
+    .btn--primary {
+      position: relative;
+    }
+    .btn--primary::before {
+      content: '';
+      position: absolute;
+      inset: -3px;
+      border-radius: calc(var(--r-xl) + 3px);
+      background: var(--amber-400);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 0.3s, transform 0.3s;
+      transform: scale(0.92);
+    }
+    .btn--primary:hover::before {
+      opacity: 0.25;
+      transform: scale(1.06);
+    }
+
+    /* Outline button border brightens + icon track on hover */
+    .btn--outline {
+      position: relative;
+      overflow: hidden;
+    }
+    .btn--outline::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: var(--r-xl);
+      background: rgba(255,255,255,0.06);
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+    .btn--outline:hover::after { opacity: 1; }
+
+    /* ═══════════════════════════════════════════
+       ANIMATIONS
+    ═══════════════════════════════════════════ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(22px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.4; }
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .anim-fade-up   { animation: fadeUp 0.75s ease both; }
+    .anim-delay-1   { animation-delay: 0.1s; }
+    .anim-delay-2   { animation-delay: 0.25s; }
+    .anim-delay-3   { animation-delay: 0.4s; }
+    .anim-delay-4   { animation-delay: 0.55s; }
+    .anim-delay-5   { animation-delay: 0.7s; }
+
+    /* ═══════════════════════════════════════════
+       1. NAVBAR
+    ═══════════════════════════════════════════ */
+
+    /* Hidden checkbox powers the mobile menu */
+    #nav-toggle { display: none; }
+
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--g-100);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+      gap: 1.5rem;
+    }
+
+    /* Logo */
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      flex-shrink: 0;
+    }
+    .nav-logo-icon {
+      width: 38px; height: 38px;
+      background: var(--g-700);
+      border-radius: var(--r-xl);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: var(--shadow-sm);
+      flex-shrink: 0;
+    }
+    .nav-logo-text { line-height: 1; }
+    .nav-logo-name {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--g-900);
+      display: block;
+    }
+    .nav-logo-sub {
+      font-size: 0.6rem;
+      font-weight: 600;
+      color: var(--s-400);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      display: block;
+      margin-top: 0.15rem;
+    }
+
+    /* Desktop links */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--s-600);
+      position: relative;
+      transition: color 0.2s;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px; left: 0;
+      width: 0; height: 2px;
+      background: var(--g-600);
+      border-radius: 2px;
+      transition: width 0.3s;
+    }
+    .nav-links a:hover { color: var(--g-700); }
+    .nav-links a:hover::after { width: 100%; }
+
+    /* Right side */
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-shrink: 0;
+    }
+
+    /* Hamburger label */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: var(--r-lg);
+      transition: background 0.2s;
+    }
+    .nav-hamburger:hover { background: var(--s-100); }
+    .nav-hamburger span {
+      display: block;
+      width: 22px; height: 2px;
+      background: var(--s-700);
+      border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    /* Mobile menu */
+    .nav-mobile {
+      display: none;
+      background: var(--white);
+      border-top: 1px solid var(--s-100);
+      padding: 1rem 1.5rem 1.5rem;
+    }
+    .nav-mobile-links {
+      list-style: none;
+      margin-bottom: 1rem;
+    }
+    .nav-mobile-links li a {
+      display: block;
+      padding: 0.65rem 0.75rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--s-700);
+      border-radius: var(--r-lg);
+      transition: color 0.2s, background 0.2s;
+    }
+    .nav-mobile-links li a:hover {
+      color: var(--g-700);
+      background: var(--g-50);
+    }
+    .nav-mobile-cta { display: block; width: 100%; text-align: center; }
+
+    /* CSS-only mobile toggle using :has() */
+    .navbar:has(#nav-toggle:checked) .nav-mobile {
+      display: block;
+      animation: slideIn 0.25s ease;
+    }
+    .navbar:has(#nav-toggle:checked) .nav-hamburger span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .navbar:has(#nav-toggle:checked) .nav-hamburger span:nth-child(2) {
+      opacity: 0;
+    }
+    .navbar:has(#nav-toggle:checked) .nav-hamburger span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* ═══════════════════════════════════════════
+       2. HERO SECTION
+    ═══════════════════════════════════════════ */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 72px;
+      background:
+        radial-gradient(ellipse 60% 50% at 90% 10%, rgba(52,211,153,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 5% 90%, rgba(245,158,11,0.10) 0%, transparent 60%),
+        linear-gradient(140deg, var(--g-950) 0%, var(--g-800) 50%, #1a2e1a 100%);
+    }
+
+    /* Dot grid texture */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px);
+      background-size: 32px 32px;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding-block: 5rem;
+      max-width: 56rem;
+    }
+
+    /* Live badge */
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(6,95,70,0.28);
+      border: 1px solid rgba(52,211,153,0.22);
+      border-radius: var(--r-full);
+      padding: 0.45rem 1rem;
+      margin-bottom: 2rem;
+    }
+    .hero-badge-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--g-400);
+      animation: pulseGlow 2s ease-in-out infinite;
+    }
+    .hero-badge span {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--g-300);
+      letter-spacing: 0.02em;
+    }
+
+    /* Hero heading */
+    .hero-heading {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 6vw, 4.5rem);
+      font-weight: 700;
+      line-height: 1.08;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+    .hero-heading .accent-gold   { color: var(--amber-400); font-style: italic; }
+    .hero-heading .accent-green  { color: var(--g-300); }
+
+    /* Hero sub */
+    .hero-sub {
+      font-size: 1.1rem;
+      color: rgba(203,213,225,0.9);
+      max-width: 38rem;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+    .hero-sub strong { color: var(--white); font-weight: 600; }
+
+    /* CTA row */
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 4rem;
+    }
+
+    /* Stats row */
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      max-width: 26rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .hero-stat-value {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+      display: block;
+    }
+    .hero-stat-label {
+      font-size: 0.72rem;
+      color: var(--s-400);
+      font-weight: 500;
+      margin-top: 0.2rem;
+      display: block;
+    }
+
+    /* ═══════════════════════════════════════════
+       3. BOUTIQUE ADVANTAGE
+    ═══════════════════════════════════════════ */
+    .advantage { background: var(--white); }
+
+    .advantage-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    /* Advantage header */
+    .advantage-heading {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 1rem;
+    }
+    .advantage-heading .accent { color: var(--g-700); font-style: italic; }
+    .advantage-intro {
+      color: var(--s-500);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 3rem;
+    }
+
+    /* Advantage blocks */
+    .advantage-block {
+      display: flex;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .advantage-block:last-child { margin-bottom: 0; }
+
+    .advantage-num {
+      flex-shrink: 0;
+      width: 48px; height: 48px;
+      background: var(--g-50);
+      border: 1px solid var(--g-200);
+      border-radius: var(--r-xl);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--g-700);
+      transition: background 0.25s, color 0.25s, border-color 0.25s, box-shadow 0.25s;
+    }
+    .advantage-block:hover .advantage-num {
+      background: var(--g-700);
+      color: var(--white);
+      border-color: var(--g-700);
+      box-shadow: 0 4px 14px rgba(6,95,70,0.3);
+    }
+    .advantage-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--s-900);
+      margin-bottom: 0.4rem;
+    }
+    .advantage-body {
+      font-size: 0.9rem;
+      color: var(--s-500);
+      line-height: 1.75;
+    }
+
+    /* Feature card (right column, sticky) */
+    .feature-card {
+      position: sticky;
+      top: 96px;
+      background: linear-gradient(145deg, var(--g-700) 0%, var(--g-950) 100%);
+      border-radius: var(--r-3xl);
+      padding: 2.25rem;
+      color: var(--white);
+      overflow: hidden;
+      box-shadow: var(--shadow-xl), 0 0 60px rgba(6,95,70,0.2);
+    }
+    /* Decorative circles */
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: -4rem; right: -4rem;
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: rgba(52,211,153,0.10);
+      pointer-events: none;
+    }
+    .feature-card::after {
+      content: '';
+      position: absolute;
+      bottom: -3rem; left: -3rem;
+      width: 150px; height: 150px;
+      border-radius: 50%;
+      background: rgba(245,158,11,0.08);
+      pointer-events: none;
+    }
+    .feature-card-inner { position: relative; z-index: 1; }
+
+    .feature-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--amber-500);
+      color: var(--s-900);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--r-full);
+      margin-bottom: 1.5rem;
+    }
+    .feature-heading {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+    .feature-heading em { color: var(--g-300); }
+
+    .feature-checklist { list-style: none; margin-bottom: 1.75rem; }
+    .feature-checklist li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.875rem;
+      color: var(--g-100);
+      padding-block: 0.45rem;
+    }
+    .check-icon {
+      width: 18px; height: 18px;
+      color: var(--g-400);
+      flex-shrink: 0;
+    }
+
+    .feature-callout {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: var(--r-2xl);
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+    .feature-callout-label {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--g-300);
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+    .feature-callout p {
+      font-size: 0.85rem;
+      color: var(--g-100);
+      line-height: 1.6;
+    }
+    .feature-callout--amber {
+      background: rgba(245,158,11,0.10);
+      border-color: rgba(245,158,11,0.18);
+    }
+    .feature-callout--amber .feature-callout-label { color: var(--amber-300); }
+    .feature-callout--amber p { color: var(--amber-100); }
+
+    /* ═══════════════════════════════════════════
+       4. VALUE CARDS GRID
+    ═══════════════════════════════════════════ */
+    .values { background: var(--s-50); }
+
+    .values-header {
+      text-align: center;
+      max-width: 36rem;
+      margin-inline: auto;
+      margin-bottom: 3.5rem;
+    }
+    .values-heading { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
+    .values-heading .accent { color: var(--g-700); font-style: italic; }
+    .values-sub { color: var(--s-500); font-size: 1.05rem; line-height: 1.7; }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+    }
+
+    .value-card {
+      background: var(--white);
+      border: 1.5px solid var(--s-200);
+      border-radius: var(--r-2xl);
+      padding: 1.75rem;
+      transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+      cursor: default;
+    }
+    .value-card:hover {
+      box-shadow: var(--shadow-xl);
+      transform: translateY(-4px);
+    }
+
+    .card-icon-wrap {
+      width: 48px; height: 48px;
+      border-radius: var(--r-xl);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.25rem;
+      transition: transform 0.3s;
+      flex-shrink: 0;
+    }
+    .value-card:hover .card-icon-wrap { transform: scale(1.1) rotate(-4deg); }
+
+    .card-icon-wrap--green  { background: var(--g-700); }
+    .card-icon-wrap--amber  { background: var(--amber-500); }
+    .card-icon-wrap--sky    { background: var(--sky-700); }
+    .card-icon-wrap--slate  { background: var(--s-700); }
+
+    .value-card--green:hover  { border-color: var(--g-400); box-shadow: 0 16px 48px rgba(6,95,70,0.12); }
+    .value-card--amber:hover  { border-color: var(--amber-300); box-shadow: 0 16px 48px rgba(245,158,11,0.12); }
+    .value-card--sky:hover    { border-color: var(--sky-200); box-shadow: 0 16px 48px rgba(3,105,161,0.10); }
+    .value-card--slate:hover  { border-color: var(--s-300); box-shadow: 0 16px 48px rgba(71,85,105,0.10); }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--s-900);
+      margin-bottom: 0.65rem;
+    }
+    .card-desc {
+      font-size: 0.85rem;
+      color: var(--s-500);
+      line-height: 1.75;
+    }
+
+    /* ═══════════════════════════════════════════
+       5. PRODUCT SPECIFICATIONS TABLE
+    ═══════════════════════════════════════════ */
+    .specs { background: var(--white); }
+
+    .specs-header { max-width: 36rem; margin-bottom: 3rem; }
+    .specs-heading { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
+    .specs-sub { color: var(--s-500); font-size: 1.05rem; line-height: 1.7; }
+
+    .specs-table-wrap {
+      border-radius: var(--r-2xl);
+      border: 1px solid var(--s-200);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      min-width: 560px;
+      border-collapse: collapse;
+    }
+
+    thead tr {
+      background: linear-gradient(90deg, var(--g-700) 0%, var(--g-600) 100%);
+    }
+    thead th {
+      text-align: left;
+      padding: 1rem 1.5rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+    thead th:first-child { width: 32%; }
+
+    tbody tr {
+      border-bottom: 1px solid var(--s-100);
+      transition: background 0.15s;
+    }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:nth-child(odd)  { background: var(--white); }
+    tbody tr:nth-child(even) { background: var(--s-50); }
+    tbody tr:hover { background: var(--g-50); }
+
+    tbody td {
+      padding: 1rem 1.5rem;
+      font-size: 0.875rem;
+      vertical-align: top;
+    }
+    tbody td:first-child {
+      font-weight: 600;
+      color: var(--s-700);
+    }
+    tbody td:last-child {
+      color: var(--s-600);
+      line-height: 1.6;
+    }
+
+    .specs-footnote {
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--s-400);
+      margin-top: 1rem;
+    }
+
+    /* ═══════════════════════════════════════════
+       6. CONTACT / LEAD FORM
+    ═══════════════════════════════════════════ */
+    .contact { background: var(--s-50); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    /* Left copy */
+    .contact-heading { font-size: clamp(2rem, 3.5vw, 2.75rem); margin-bottom: 1.25rem; }
+    .contact-heading .accent { color: var(--g-700); font-style: italic; }
+    .contact-desc {
+      font-size: 1rem;
+      color: var(--s-500);
+      line-height: 1.75;
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-details { display: flex; flex-direction: column; gap: 1.4rem; margin-bottom: 2.5rem; }
+    .contact-detail  { display: flex; align-items: flex-start; gap: 1rem; }
+    .contact-detail-icon {
+      width: 44px; height: 44px;
+      background: var(--g-700);
+      border-radius: var(--r-xl);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      box-shadow: var(--shadow-sm);
+      margin-top: 0.1rem;
+    }
+    .contact-detail-label {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--s-400);
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+    .contact-detail-value {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--s-800);
+      display: block;
+    }
+    .contact-detail-sub {
+      font-size: 0.75rem;
+      color: var(--s-400);
+      display: block;
+      margin-top: 0.1rem;
+    }
+
+    /* Form card */
+    .form-card {
+      background: var(--white);
+      border: 1px solid var(--s-200);
+      border-radius: var(--r-3xl);
+      padding: 2.25rem;
+      box-shadow: var(--shadow-xl);
+    }
+    .form-card-heading {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--s-900);
+      margin-bottom: 0.25rem;
+    }
+    .form-card-sub {
+      font-size: 0.85rem;
+      color: var(--s-400);
+      margin-bottom: 2rem;
+    }
+
+    .form { display: flex; flex-direction: column; gap: 1.1rem; }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+    .form-label {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--s-500);
+    }
+    .form-input,
+    .form-select,
+    .form-textarea {
+      font-family: var(--font-body);
+      font-size: 0.875rem;
+      color: var(--s-800);
+      background: var(--white);
+      border: 1.5px solid var(--s-200);
+      border-radius: var(--r-xl);
+      padding: 0.8rem 1rem;
+      width: 100%;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+      appearance: none;
+    }
+    .form-input::placeholder,
+    .form-textarea::placeholder { color: var(--s-300); }
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      border-color: var(--g-500);
+      box-shadow: 0 0 0 3px rgba(5,150,105,0.12);
+    }
+    .form-textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
+
+    /* Select arrow */
+    .form-select-wrap { position: relative; }
+    .form-select-wrap::after {
+      content: '';
+      position: absolute;
+      right: 1rem; top: 50%;
+      transform: translateY(-50%);
+      width: 0; height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 6px solid var(--s-400);
+      pointer-events: none;
+    }
+
+    /* Submit button */
+    .form-submit {
+      width: 100%;
+      background: var(--g-700);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border: none;
+      border-radius: var(--r-xl);
+      padding: 1.1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .form-submit:hover {
+      background: var(--g-800);
+      transform: scale(1.02);
+      box-shadow: 0 8px 28px rgba(6,95,70,0.3);
+    }
+    .form-submit:active { transform: scale(0.99); }
+
+    .form-note {
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--s-400);
+    }
+
+    /* ═══════════════════════════════════════════
+       7. FOOTER
+    ═══════════════════════════════════════════ */
+    .footer {
+      background: linear-gradient(180deg, var(--g-900) 0%, var(--g-950) 100%);
+      color: var(--white);
+    }
+    .footer-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2.5rem;
+      padding-block: 4rem;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    /* Footer brand */
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin-bottom: 1rem;
+    }
+    .footer-logo-icon {
+      width: 38px; height: 38px;
+      background: var(--g-700);
+      border-radius: var(--r-xl);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .footer-brand-name {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      display: block;
+    }
+    .footer-brand-sub {
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--g-400);
+      display: block;
+      margin-top: 0.15rem;
+    }
+    .footer-tagline {
+      font-size: 0.85rem;
+      color: var(--g-300);
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .footer-tag {
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--g-300);
+      border: 1px solid rgba(110,231,183,0.2);
+      border-radius: var(--r-full);
+      padding: 0.25rem 0.65rem;
+    }
+
+    /* Footer sections */
+    .footer-section-title {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--g-400);
+      display: block;
+      margin-bottom: 1.4rem;
+    }
+
+    .footer-contacts { display: flex; flex-direction: column; gap: 1.25rem; }
+    .footer-contact-item { display: flex; align-items: flex-start; gap: 0.85rem; }
+    .footer-contact-icon {
+      width: 16px; height: 16px;
+      color: var(--g-500);
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+    }
+    .footer-contact-value {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--white);
+      display: block;
+    }
+    .footer-contact-sub {
+      font-size: 0.72rem;
+      color: var(--g-400);
+      display: block;
+      margin-top: 0.1rem;
+    }
+
+    /* Hours table */
+    .hours-list { display: flex; flex-direction: column; gap: 0; }
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      padding-block: 0.6rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .hours-row:last-child { border-bottom: none; }
+    .hours-day { color: var(--g-300); }
+    .hours-time { font-weight: 600; color: var(--white); }
+    .hours-time--closed { color: #f87171; }
+
+    .footer-whatsapp-note {
+      margin-top: 1.25rem;
+      background: rgba(245,158,11,0.10);
+      border: 1px solid rgba(245,158,11,0.18);
+      border-radius: var(--r-xl);
+      padding: 0.85rem 1rem;
+      font-size: 0.78rem;
+      color: var(--amber-300);
+      line-height: 1.55;
+    }
+    .footer-whatsapp-note strong { color: var(--amber-400); }
+
+    /* Bottom bar */
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      padding-block: 1.75rem;
+    }
+    .footer-copy { font-size: 0.72rem; color: rgba(110,231,183,0.4); }
+    .footer-meta { font-size: 0.72rem; color: rgba(110,231,183,0.25); }
+
+    /* ═══════════════════════════════════════════
+       RESPONSIVE — TABLET (≤ 900px)
+    ═══════════════════════════════════════════ */
+    @media (max-width: 900px) {
+      :root { --section-py: 4.5rem; }
+
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .nav-cta-desktop { display: none; }
+
+      .advantage-grid { grid-template-columns: 1fr; }
+      .feature-card { position: static; }
+
+      .cards-grid { grid-template-columns: 1fr 1fr; }
+
+      .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+
+      .footer-main { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* ═══════════════════════════════════════════
+       RESPONSIVE — MOBILE (≤ 560px)
+    ═══════════════════════════════════════════ */
+    @media (max-width: 560px) {
+      :root { --section-py: 3.5rem; }
+
+      .hero-stats { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+      .hero-stat-value { font-size: 1.15rem; }
+
+      .cards-grid { grid-template-columns: 1fr; }
+
+      .form-row { grid-template-columns: 1fr; }
+
+      .footer-main { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════
+       1. STICKY NAVBAR
+       CSS-only mobile menu via checkbox + :has()
+  ════════════════════════════════════════ -->
+  <nav class="navbar">
+    <input type="checkbox" id="nav-toggle" />
+
+    <div class="container nav-inner">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo">
+        <div class="nav-logo-icon">
+          <!-- Leaf SVG -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+          </svg>
+        </div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Green Gold Guavas</span>
+          <span class="nav-logo-sub">Est. Hyderabad</span>
+        </div>
+      </a>
+
+      <!-- Desktop nav links -->
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#advantage">Our Advantage</a></li>
+        <li><a href="#specifications">Specifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Right: CTA + Hamburger -->
+      <div class="nav-right">
+        <a href="#contact" class="btn btn--green nav-cta-desktop">
+          Request Bulk Quote
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+
+        <!-- Hamburger label (mobile) -->
+        <label for="nav-toggle" class="nav-hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div class="nav-mobile">
+      <ul class="nav-mobile-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#advantage">Our Advantage</a></li>
+        <li><a href="#specifications">Specifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--green nav-mobile-cta">
+        Request Bulk Quote &rarr;
+      </a>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════
+       2. HERO SECTION
+  ════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+
+        <!-- Live season badge -->
+        <div class="hero-badge anim-fade-up anim-delay-1">
+          <span class="hero-badge-dot"></span>
+          <span>Now Accepting Regional Wholesale Partners &mdash; Harvest Season 2026</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero-heading anim-fade-up anim-delay-2">
+          Premium Allahabad Safeda,<br>
+          <span class="accent-gold">Harvested at Peak.</span><br>
+          <span class="accent-green">Delivered Fresh.</span>
+        </h1>
+
+        <!-- Sub-headline -->
+        <p class="hero-sub anim-fade-up anim-delay-3">
+          Hyderabad's most meticulous boutique guava orchard &mdash; 100% organic,
+          zero international export, and strategically positioned for rapid
+          regional B2B dispatch to platforms like <strong>BigBasket</strong>,
+          <strong>Blinkit</strong> &amp; <strong>Swiggy Instamart</strong>.
+        </p>
+
+        <!-- CTAs -->
+        <div class="hero-ctas anim-fade-up anim-delay-4">
+          <a href="#contact" class="btn btn--primary">
+            Request a Bulk Quote
+            <svg class="btn-icon btn-icon--arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="#advantage" class="btn btn--outline">
+            Discover Our Advantage
+            <svg class="btn-icon btn-icon--chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <div class="hero-stats anim-fade-up anim-delay-5">
+          <div>
+            <span class="hero-stat-value">3 Acres</span>
+            <span class="hero-stat-label">Farm Area</span>
+          </div>
+          <div>
+            <span class="hero-stat-value">100% Organic</span>
+            <span class="hero-stat-label">Farming Method</span>
+          </div>
+          <div>
+            <span class="hero-stat-value">Domestic Only</span>
+            <span class="hero-stat-label">Supply Focus</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       3. BOUTIQUE ADVANTAGE
+  ════════════════════════════════════════ -->
+  <section class="section advantage" id="advantage">
+    <div class="container">
+
+      <div class="advantage-grid">
+
+        <!-- Left: Blocks -->
+        <div>
+          <span class="section-label section-label--green">Our Boutique Advantage</span>
+          <h2 class="display-heading advantage-heading">
+            Why 3 Acres Produces <span class="accent">Better Guavas</span> Than 300
+          </h2>
+          <p class="advantage-intro">
+            In a world of sprawling industrial farms, our deliberate smallness is
+            our greatest strength &mdash; and your platform's competitive edge.
+          </p>
+
+          <!-- Block 01 -->
+          <div class="advantage-block">
+            <div class="advantage-num">01</div>
+            <div>
+              <h3 class="advantage-title">Every Tree Gets Personal Attention</h3>
+              <p class="advantage-body">
+                On a 3-acre boutique orchard, we personally monitor every single tree
+                through each growth stage. No overlooked branches, no missed stress
+                signals, no skipped bio-input applications. This hands-on vigilance is
+                simply impossible at industrial scale &mdash; and the difference shows in
+                every fruit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Block 02 -->
+          <div class="advantage-block">
+            <div class="advantage-num">02</div>
+            <div>
+              <h3 class="advantage-title">Ancient Bio-Inputs, Modern Precision</h3>
+              <p class="advantage-body">
+                We exclusively nourish our orchard with Panchagavya (a traditional
+                fermented cattle-product bio-stimulant) and Jeevamrutam (a living
+                microbial soil activator). These formulations build extraordinary soil
+                health, producing fruits with exceptional natural sweetness, dense
+                nutrition, and long-lasting freshness &mdash; with zero chemical residue.
+              </p>
+            </div>
+          </div>
+
+          <!-- Block 03 -->
+          <div class="advantage-block">
+            <div class="advantage-num">03</div>
+            <div>
+              <h3 class="advantage-title">Regional-First Means Freshness-First</h3>
+              <p class="advantage-body">
+                We do not export internationally. Every fruit remains within the domestic
+                supply chain. This means we harvest at the precise moment of peak maturity
+                &mdash; not days early to survive long-distance shipping. Your platform
+                receives Allahabad Safedas with maximum crunch, superior shelf life, and
+                the authentic flavour that retail customers return for.
+              </p>
+            </div>
+          </div>
+
+          <!-- Block 04 -->
+          <div class="advantage-block">
+            <div class="advantage-num">04</div>
+            <div>
+              <h3 class="advantage-title">Precision Drip Irrigation Throughout</h3>
+              <p class="advantage-body">
+                Our orchard runs on a calibrated drip irrigation system delivering exactly
+                the right amount of water directly at the root zone. This conserves resources,
+                prevents overwatering stress, and ensures consistent, uniform fruit sizing &mdash;
+                a critical advantage for retail shelf presentation and SKU standardisation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Feature Card -->
+        <div>
+          <div class="feature-card">
+            <div class="feature-card-inner">
+
+              <div class="feature-tag">
+                <!-- Leaf -->
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                Premium Allahabad Safeda
+              </div>
+
+              <h3 class="feature-heading">
+                Pristine. Pure. <em>Perfectly Ripe.</em>
+              </h3>
+
+              <ul class="feature-checklist">
+                <li>
+                  <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                  Signature pristine round shape
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                  Smooth, unblemished skin surface
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                  Rich white pulp, minimal seeds
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                  Authentic sweet-and-tart flavour
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                  Consistent sizing for retail shelf parity
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                  Zero chemical residue &mdash; clean label
+                </li>
+              </ul>
+
+              <div class="feature-callout">
+                <span class="feature-callout-label">Organic Farming Method</span>
+                <p>Panchagavya &amp; Jeevamrutam bio-inputs only. No synthetic pesticides or fertilisers &mdash; from soil to shelf.</p>
+              </div>
+
+              <div class="feature-callout feature-callout--amber">
+                <span class="feature-callout-label">Infrastructure</span>
+                <p>Precision root-zone drip irrigation for uniform sizing and zero water stress.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       4. CORE VALUE CARDS GRID
+  ════════════════════════════════════════ -->
+  <section class="section values">
+    <div class="container">
+
+      <div class="values-header">
+        <span class="section-label section-label--slate">Core Value Pillars</span>
+        <h2 class="display-heading values-heading">
+          Built for <span class="accent">B2B Excellence</span>
+        </h2>
+        <p class="values-sub">
+          Four uncompromising pillars that make Green Gold Guavas the preferred
+          wholesale partner for premium platforms.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- Card 1: Organic -->
+        <div class="value-card value-card--green">
+          <div class="card-icon-wrap card-icon-wrap--green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+          </div>
+          <h3 class="card-title">100% Organic &amp; Clean</h3>
+          <p class="card-desc">
+            Certified chemical-free farming with Panchagavya &amp; Jeevamrutam
+            bio-inputs exclusively. Zero pesticide residue. Safe for all
+            clean-label and premium organic SKUs.
+          </p>
+        </div>
+
+        <!-- Card 2: Shelf Appeal -->
+        <div class="value-card value-card--amber">
+          <div class="card-icon-wrap card-icon-wrap--amber">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3 4 6l-1-3 1-3 1 3Z"/><path d="M19 18 18 21l-1-3 1-3 1 3Z"/></svg>
+          </div>
+          <h3 class="card-title">Pristine Shelf Appeal</h3>
+          <p class="card-desc">
+            The Allahabad Safeda's signature round form, smooth skin, and
+            consistent sizing translate directly into premium retail shelf
+            presence and higher sell-through rates.
+          </p>
+        </div>
+
+        <!-- Card 3: Logistics -->
+        <div class="value-card value-card--sky">
+          <div class="card-icon-wrap card-icon-wrap--sky">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><rect width="13" height="8" x="9" y="11" rx="1"/><circle cx="11" cy="19" r="2"/><circle cx="19" cy="19" r="2"/></svg>
+          </div>
+          <h3 class="card-title">Swift Regional Logistics</h3>
+          <p class="card-desc">
+            Domestic-only supply chain means zero international transit delays.
+            Fruits dispatch within hours of harvest to regional B2B hubs at
+            peak maturity and crunch.
+          </p>
+        </div>
+
+        <!-- Card 4: Quality Control -->
+        <div class="value-card value-card--slate">
+          <div class="card-icon-wrap card-icon-wrap--slate">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3 class="card-title">High-Care Quality Control</h3>
+          <p class="card-desc">
+            Small-batch, hands-on QC at every growth stage. Every crate is
+            individually inspected and graded before dispatch &mdash; no
+            scale-driven shortcuts, ever.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       5. PRODUCT SPECIFICATIONS TABLE
+  ════════════════════════════════════════ -->
+  <section class="section specs" id="specifications">
+    <div class="container">
+
+      <div class="specs-header">
+        <span class="section-label section-label--green">Technical Specifications</span>
+        <h2 class="display-heading specs-heading">Product Data Sheet</h2>
+        <p class="specs-sub">
+          All the detail your procurement team needs to evaluate, grade, and
+          onboard our supply into your platform's SKU catalogue.
+        </p>
+      </div>
+
+      <div class="specs-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Specification</th>
+              <th>Detail</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Variety</td>
+              <td>Premium Allahabad Safeda (Psidium guajava)</td>
+            </tr>
+            <tr>
+              <td>Flavour Profile</td>
+              <td>Authentic sweet-and-tart balance; high natural sugar content with pleasant acidic notes; distinctively aromatic white-fleshed variety</td>
+            </tr>
+            <tr>
+              <td>Skin Characteristics</td>
+              <td>Smooth, thin, pristine light-yellow skin at peak ripeness; minimal surface blemishing; signature round form with superior retail presentation</td>
+            </tr>
+            <tr>
+              <td>Pulp &amp; Seed</td>
+              <td>Dense white pulp with low seed count; fine-grained, non-granular texture ideal for fresh-cut, snacking, and value-added applications</td>
+            </tr>
+            <tr>
+              <td>Organic Inputs Used</td>
+              <td>Panchagavya bio-stimulant (traditional fermented formulation) + Jeevamrutam (living microbial soil activator); zero synthetic pesticides or chemical fertilisers since inception</td>
+            </tr>
+            <tr>
+              <td>Irrigation Infrastructure</td>
+              <td>Precision sub-surface drip irrigation; calibrated water delivery directly at root zone; prevents overwatering stress and ensures uniform fruit sizing</td>
+            </tr>
+            <tr>
+              <td>Grading Standards</td>
+              <td>Hand-sorted and individually inspected; uniform size grading (A-Grade and A+-Grade available); assessed for shape integrity, skin quality, and weight consistency</td>
+            </tr>
+            <tr>
+              <td>Packaging</td>
+              <td>Standard well-ventilated commercial CFB/wooden crates optimised for airflow during regional transit; available in 5 kg, 10 kg, and 20 kg configurations</td>
+            </tr>
+            <tr>
+              <td>Supply Geography</td>
+              <td>Domestic and regional supply ONLY &mdash; Telangana, Andhra Pradesh &amp; major South Indian B2B distribution hubs. Zero international export.</td>
+            </tr>
+            <tr>
+              <td>Minimum Order Volume</td>
+              <td>Volume-based tiers available; ongoing procurement contracts preferred &mdash; please enquire via the quote form for current season availability</td>
+            </tr>
+            <tr>
+              <td>Harvest Availability</td>
+              <td>2026 harvest ready — advance booking strongly recommended for guaranteed dispatch slots. Contact us for the current season calendar.</td>
+            </tr>
+            <tr>
+              <td>Origin</td>
+              <td>3-acre boutique orchard, Angadi Chittampally, Vikarabad, Telangana, India &mdash; personally monitored and managed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="specs-footnote">
+        * All specifications subject to seasonal variation. Contact our wholesale team for the current harvest report.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       6. LEAD GENERATION FORM
+  ════════════════════════════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: Copy -->
+        <div>
+          <span class="section-label section-label--green">Get In Touch</span>
+          <h2 class="display-heading contact-heading">
+            Start Your <span class="accent">Wholesale</span> Enquiry
+          </h2>
+          <p class="contact-desc">
+            Whether you're a supermarket category manager evaluating new organic
+            suppliers, a wholesale distributor building a premium fruit portfolio,
+            or a quick-commerce platform expanding your organic SKU range &mdash;
+            we'd love to build a tailored supply partnership with you.
+          </p>
+
+          <div class="contact-details">
+
+            <!-- Phone -->
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">Wholesale Hotline &amp; WhatsApp</span>
+                <span class="contact-detail-value">+91 9493409023</span>
+                <span class="contact-detail-sub">Available Mon–Sat, 9 AM – 6 PM IST</span>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">Farm Location</span>
+                <span class="contact-detail-value">Angadi Chittampally, Vikarabad, Telangana</span>
+                <span class="contact-detail-sub">Vikarabad District — domestic supply to South Indian B2B hubs</span>
+              </div>
+            </div>
+
+            <!-- Hours -->
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">Business Hours (IST)</span>
+                <span class="contact-detail-value">Monday – Saturday, 9:00 AM – 6:00 PM</span>
+                <span class="contact-detail-sub">WhatsApp available for urgent out-of-hours queries</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- WhatsApp button -->
+          <a href="https://wa.me/919493409023" target="_blank" rel="noopener noreferrer" class="btn--whatsapp">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="form-card">
+          <h3 class="form-card-heading">Request a Bulk Quote</h3>
+          <p class="form-card-sub">Our wholesale team responds within 24 hours.</p>
+
+          <!-- Form submissions open a pre-filled WhatsApp message to +91 9493409023 -->
+          <form class="form" id="enquiry-form" action="#" method="POST">
+
+            <!-- Row: Company + Contact -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="company">Company Name *</label>
+                <input class="form-input" id="company" name="company" type="text" required placeholder="Your Company Pvt Ltd" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact">Contact Person *</label>
+                <input class="form-input" id="contact" name="contact" type="text" required placeholder="Your Full Name" />
+              </div>
+            </div>
+
+            <!-- Row: Email + Phone -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">Business Email *</label>
+                <input class="form-input" id="email" name="email" type="email" required placeholder="procurement@company.com" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone / WhatsApp</label>
+                <input class="form-input" id="phone" name="phone" type="tel" placeholder="+91 9493409023" />
+              </div>
+            </div>
+
+            <!-- Volume -->
+            <div class="form-group">
+              <label class="form-label" for="volume">Estimated Order Volume *</label>
+              <div class="form-select-wrap">
+                <select class="form-select" id="volume" name="volume" required>
+                  <option value="" disabled selected>Select your volume range...</option>
+                  <option value="lt1ton">Less than 1 Ton</option>
+                  <option value="1-5tons">1 – 5 Tons</option>
+                  <option value="5+tons">5+ Tons (Bulk Contract Preferred)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label class="form-label" for="message">Message / Requirements</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your platform, preferred supply frequency, packaging requirements, or any specific grading needs..."></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" id="submit-btn" class="form-submit">
+              <span id="submit-label">Submit Wholesale Enquiry</span>
+              <svg id="submit-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+
+            <p class="form-note">Submitting opens WhatsApp with your details pre-filled. We reply within 24 hours.</p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       7. FOOTER
+  ════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+
+        <!-- Brand column -->
+        <div>
+          <div class="footer-logo">
+            <div class="footer-logo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+            </div>
+            <div>
+              <span class="footer-brand-name">Green Gold Guavas</span>
+              <span class="footer-brand-sub">Angadi Chittampally, Vikarabad</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Hyderabad's premier boutique Allahabad Safeda orchard. 100% organic,
+            harvest-fresh, and built for regional B2B excellence. Zero international
+            export. Maximum regional freshness.
+          </p>
+          <div class="footer-tags">
+            <span class="footer-tag">100% Organic</span>
+            <span class="footer-tag">Allahabad Safeda</span>
+            <span class="footer-tag">Domestic Supply</span>
+          </div>
+        </div>
+
+        <!-- Contact column -->
+        <div>
+          <span class="footer-section-title">Contact &amp; Location</span>
+          <div class="footer-contacts">
+            <div class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <span class="footer-contact-value">+91 9493409023</span>
+                <span class="footer-contact-sub">Wholesale Enquiries &amp; WhatsApp</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <span class="footer-contact-value">Angadi Chittampally, Vikarabad</span>
+                <span class="footer-contact-sub">Telangana, India &mdash; South India B2B supply</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hours column -->
+        <div>
+          <span class="footer-section-title">Business Hours (IST)</span>
+          <div class="hours-list">
+            <div class="hours-row">
+              <span class="hours-day">Monday – Friday</span>
+              <span class="hours-time">9:00 AM – 6:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Saturday</span>
+              <span class="hours-time">9:00 AM – 2:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Sunday</span>
+              <span class="hours-time hours-time--closed">Closed</span>
+            </div>
+          </div>
+          <div class="footer-whatsapp-note">
+            <strong>WhatsApp available</strong> for urgent enquiries outside business hours. Response within 24 hrs guaranteed.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <span class="footer-copy">&copy; 2026 Green Gold Guavas, Vikarabad, Telangana. All rights reserved.</span>
+        <span class="footer-meta">Premium Allahabad Safeda &middot; 100% Organic &middot; Domestic Supply Only &middot; Vikarabad, Telangana</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════════
+       WHATSAPP REDIRECT SCRIPT
+       Reads the form fields, builds a formatted
+       message, and opens wa.me with it pre-filled.
+       This is the ONLY JavaScript on this page.
+  ════════════════════════════════════════ -->
+  <script>
+    document.getElementById('enquiry-form').addEventListener('submit', function (e) {
+      e.preventDefault(); // Stop the normal form submit (which would go nowhere)
+
+      /* ── Read all field values ── */
+      const company = document.getElementById('company').value.trim();
+      const contact = document.getElementById('contact').value.trim();
+      const email   = document.getElementById('email').value.trim();
+      const phone   = document.getElementById('phone').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      /* ── Map dropdown value to a readable label ── */
+      const volumeMap = {
+        'lt1ton' : 'Less than 1 Ton',
+        '1-5tons': '1 – 5 Tons',
+        '5+tons' : '5+ Tons (Bulk Contract)'
+      };
+      const volume = volumeMap[document.getElementById('volume').value] || '—';
+
+      /* ── Build the WhatsApp message ── */
+      const waMessage =
+        '🌿 *New Wholesale Enquiry — Green Gold Guavas*\n\n' +
+        '🏢 *Company:*  '  + company + '\n' +
+        '👤 *Contact:*  '  + contact + '\n' +
+        '📧 *Email:*    '  + email   + '\n' +
+        '📞 *Phone:*    '  + (phone || 'Not provided') + '\n' +
+        '📦 *Order Volume:*  ' + volume + '\n' +
+        (message ? '\n💬 *Message:*\n' + message : '') +
+        '\n\n_Sent via GreenGoldGuavas.com enquiry form_';
+
+      /* ── Open WhatsApp with the pre-filled message ── */
+      const waURL = 'https://wa.me/919493409023?text=' + encodeURIComponent(waMessage);
+      window.open(waURL, '_blank');
+
+      /* ── Button feedback: show success state ── */
+      const btn   = document.getElementById('submit-btn');
+      const label = document.getElementById('submit-label');
+      const icon  = document.getElementById('submit-icon');
+
+      btn.style.background  = '#059669';  /* Brighter green */
+      btn.style.transform   = 'scale(1)';
+      label.textContent     = '✓ Opening WhatsApp...';
+      icon.style.display    = 'none';
+
+      /* ── Reset everything after 3 seconds ── */
+      setTimeout(function () {
+        btn.style.background  = '';
+        btn.style.transform   = '';
+        label.textContent     = 'Submit Wholesale Enquiry';
+        icon.style.display    = '';
+        document.getElementById('enquiry-form').reset();
+      }, 3000);
+    });
+  </script>
+
+</body>
+</html>
